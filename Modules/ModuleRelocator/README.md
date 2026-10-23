@@ -70,13 +70,13 @@ Require ModuleRelocator from your server-side entry point and execute it before 
 ```lua
 local ModuleRelocator = require(path.to.ModuleRelocator)
 
-ModuleRelocator.Relocate()
+ModuleRelocator:Relocate()
 ```
 
 ### Custom configuration
 
 ```lua
-ModuleRelocator.Relocate({
+ModuleRelocator:Relocate({
     tag = "ServerModule",
     parent = game:GetService("ServerStorage"),
 })
